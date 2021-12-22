@@ -1,69 +1,37 @@
 <div align="center">
 
-  <h1><code>wasm-pack-template</code></h1>
+  <h1><code>Collatz Conjecture Visualization</code></h1>
 
-  <strong>A template for kick starting a Rust and WebAssembly project using <a href="https://github.com/rustwasm/wasm-pack">wasm-pack</a>.</strong>
+  <strong>Rust and WebAssembly project that renders a sequence of integers inside HTML canvas element. Integers are obtained by certain arithmetic operations defined by Collatz conjecture.</strong>
 
-  <p>
-    <a href="https://travis-ci.org/rustwasm/wasm-pack-template"><img src="https://img.shields.io/travis/rustwasm/wasm-pack-template.svg?style=flat-square" alt="Build Status" /></a>
-  </p>
-
-  <h3>
-    <a href="https://rustwasm.github.io/docs/wasm-pack/tutorials/npm-browser-packages/index.html">Tutorial</a>
-    <span> | </span>
-    <a href="https://discordapp.com/channels/442252698964721669/443151097398296587">Chat</a>
-  </h3>
-
-  <sub>Built with 🦀🕸 by <a href="https://rustwasm.github.io/">The Rust and WebAssembly Working Group</a></sub>
 </div>
+
+## Preview
+
+![](https://media.giphy.com/media/Po6zT5rKuNGt4tlT94/giphy.gif)
 
 ## About
 
-[**📚 Read this template tutorial! 📚**][template-docs]
+Collatz conjecture, also known as 3x + 1 problem, is an unsolved problem in mathematics and is named after Lothar Collatz who proposed it in one of his papers in 1937.
+Begin with any positive integer and generate a sequence as follows: If a
+number is even, divide it by two. Else, multiply by three and add one. Repetition of this process will eventually reach the value 1. Proof or disproof of this seemingly simple conjecture has remained elusive.
 
-This template is designed for compiling Rust libraries into WebAssembly and
-publishing the resulting package to NPM.
+## Usage
 
-Be sure to check out [other `wasm-pack` tutorials online][tutorials] for other
-templates and usages of `wasm-pack`.
-
-[tutorials]: https://rustwasm.github.io/docs/wasm-pack/tutorials/index.html
-[template-docs]: https://rustwasm.github.io/docs/wasm-pack/tutorials/npm-browser-packages/index.html
-
-## 🚴 Usage
-
-### 🐑 Use `cargo generate` to Clone this Template
-
-[Learn more about `cargo generate` here.](https://github.com/ashleygwilliams/cargo-generate)
-
-```
-cargo generate --git https://github.com/rustwasm/wasm-pack-template.git --name my-project
-cd my-project
-```
-
-### 🛠️ Build with `wasm-pack build`
+### Build .wasm file with `wasm-pack build`
 
 ```
 wasm-pack build
 ```
 
-### 🔬 Test in Headless Browsers with `wasm-pack test`
+### Install dependencies with `npm install`
 
 ```
-wasm-pack test --headless --firefox
+npm install
 ```
 
-### 🎁 Publish to NPM with `wasm-pack publish`
+### Build the example locally with `npm run serve`
 
 ```
-wasm-pack publish
+npm run serve
 ```
-
-## 🔋 Batteries Included
-
-* [`wasm-bindgen`](https://github.com/rustwasm/wasm-bindgen) for communicating
-  between WebAssembly and JavaScript.
-* [`console_error_panic_hook`](https://github.com/rustwasm/console_error_panic_hook)
-  for logging panic messages to the developer console.
-* [`wee_alloc`](https://github.com/rustwasm/wee_alloc), an allocator optimized
-  for small code size.
