@@ -2,13 +2,15 @@
 
   <h1><code>Collatz Conjecture Visualization</code></h1>
 
-  <strong>Rust and WebAssembly project that renders a sequence of integers inside HTML canvas element. Integers are obtained by certain arithmetic operations defined by Collatz conjecture.</strong>
+<strong>Rust and WebAssembly project that renders a sequence of integers inside HTML canvas element. Integers are obtained from certain arithmetic operations defined by Collatz conjecture.</strong>
 
 </div>
 
 ## Preview
 
-![](https://media.giphy.com/media/Po6zT5rKuNGt4tlT94/giphy.gif)
+<p align="center">
+  <img src="https://media.giphy.com/media/DfvbGiXlWurQ5csIkH/giphy.gif" alt="animated" />
+</p>
 
 ## About
 
