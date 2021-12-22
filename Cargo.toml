@@ -1,0 +1,28 @@
+[package]
+name = "collatz-conjecture"
+version = "0.1.0"
+authors = ["Domagoj Sucic"]
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+js-sys = "0.3.55"
+wasm-bindgen = "0.2.78"
+
+[dependencies.web-sys]
+version = "0.3.4"
+features = [
+  'CanvasRenderingContext2d',
+  'CssStyleDeclaration',
+  'Document',
+  'Element',
+  'EventTarget',
+  'HtmlCanvasElement',
+  'HtmlElement',
+  'MouseEvent',
+  'Node',
+  'Window',
+  "console"
+]
